@@ -1,9 +1,14 @@
-import './Calculator.scss'
+import Screen from "./Screen";
+import ButtonBox from "./ButtonBox";
+import "./Calculator.scss";
 
 function Calculator() {
   return (
-    <div>Calculator</div>
-  )
+    <div className="calculator">
+      <Screen />
+      <ButtonBox />
+    </div>
+  );
 }
 
-export default Calculator
+export default Calculator;
