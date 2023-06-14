@@ -1,9 +1,9 @@
-import './Screen.scss'
+import "./Screen.scss";
 
-function Screen() {
+function Screen({ screenValue }) {
   return (
     <div>
-      <input className="input"></input>
+      <input className="input" defaultValue={screenValue}></input>
     </div>
   );
 }

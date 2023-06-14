@@ -1,16 +1,18 @@
-import "./Button.scss";
+import { RiDeleteBack2Fill } from "react-icons/ri";
 
-function Button({ value }) {
+function Button({ btnValue, btnClick }) {
   return (
-    <div>
-      <button className="button">
-        {value.includes("&") ? value.replace("&amp;", "&") : value}
-      </button>
-    </div>
+    <button
+      className={btnValue === "C" ? "button buttonDeleteItem" : "button"}
+      onClick={() => btnClick(btnValue)}
+    >
+      {btnValue === "R" ? (
+        <RiDeleteBack2Fill className="buttonDeleteIcon" />
+      ) : (
+        btnValue
+      )}
+    </button>
   );
 }
 
 export default Button;
-
-// str.replace("&amp;", "&");
-// &lArr;

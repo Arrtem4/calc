@@ -1,12 +1,13 @@
 import Button from "./Button";
 import buttons from "./Buttons.js";
+
 import "./ButtonBox.scss";
 
-function ButtonBox() {
+function ButtonBox({ btnClick }) {
   return (
     <div className="buttonBox">
       {buttons.map((btn, i) => (
-        <Button value={btn} key={i} />
+        <Button btnClick={btnClick} btnValue={btn} key={i} />
       ))}
     </div>
   );
