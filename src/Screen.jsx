@@ -3,7 +3,7 @@ import "./Screen.scss";
 function Screen({ screenValue }) {
   return (
     <div>
-      <input className="input" defaultValue={screenValue}></input>
+      <p className="input">{screenValue}</p>
     </div>
   );
 }

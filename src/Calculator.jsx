@@ -18,12 +18,12 @@ function Calculator() {
         setScreenValue(eval(screenValue).toString());
         break;
       case "0":
-        /[1-9]/.test(screenValue[screenValue.length - 1])
+        /[0-9]/.test(screenValue[screenValue.length - 1])
           ? setScreenValue(screenValue + sign)
           : setScreenValue(screenValue);
         break;
       case "00":
-        /[1-9]/.test(screenValue[screenValue.length - 1])
+        /[0-9]/.test(screenValue[screenValue.length - 1])
           ? setScreenValue(screenValue + sign)
           : setScreenValue(screenValue);
         break;
