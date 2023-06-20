@@ -13,12 +13,25 @@
 .ankor {
   color: transparent;
 }
-.wrapper {
-  width: 100%;
+.screen {
   margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 50rem;
-  text-align: center;
-  padding: 1rem 1.5rem 0.5rem 1rem;
-  height: min-content;
+  padding: 0rem 2rem;
+  min-height: 7rem;
+  &__content {
+    width: 100%;
+    font-size: 4rem;
+    color: white;
+    overflow: hidden;
+    display: inline-block;
+    text-align: right;
+    &_15 {
+      font-size: 2rem;
+      word-wrap: break-word;
+    }
+  }
 }

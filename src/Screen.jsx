@@ -2,10 +2,14 @@ import "./Screen.scss";
 
 function Screen({ screenValue }) {
   return (
-    <div className="wrapper">
-      <p className={`screen ${screenValue.length > 14 ? `screen__15` : ``}`}>
+    <div className="screen">
+      <p
+        className={`screen__content ${
+          screenValue.length > 14 ? `screen__content_15` : ``
+        }`}
+      >
         {screenValue}
-        <span className="ankor">1</span>
+        <span className="ankor"></span>
       </p>
     </div>
   );

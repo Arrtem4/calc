@@ -20,13 +20,16 @@ body {
   user-select: none;
 }
 
+.layout {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 4rem 1fr;
+}
+
 .calculator {
   padding: 2rem 1rem;
   width: 43rem;
-  &__center {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  justify-self: center;
+  align-self: center;
 }

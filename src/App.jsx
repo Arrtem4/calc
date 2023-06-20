@@ -1,13 +1,12 @@
 import "./App.scss";
 import Calculator from "./Calculator";
+import Theme from "./Theme";
 
 function App() {
   return (
-    <div>
-      <div className="theme__block"></div>
-      <div className="calculator__center">
-        <Calculator />
-      </div>
+    <div className="layout">
+      <Theme />
+      <Calculator />
     </div>
   );
 }
