@@ -45,7 +45,17 @@ body {
   align-items: center;
   margin: 1rem 0rem;
   text-align: center;
+  &__name {
+    background-color: transparent;
+  }
   &__arrow {
     font-size: 4rem;
+    background-color: transparent;
+    &:hover {
+      transform: scale(150%);
+    }
+    &:active {
+      transform: scale(100%);
+    }
   }
 }

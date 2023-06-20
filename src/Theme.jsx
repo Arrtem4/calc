@@ -12,7 +12,7 @@ const Theme = ({ theme, setTheme, themes }) => {
             : setTheme(themes[x - 1]);
         }}
       />
-      <p className={`theme__name ${theme}`}>Theme</p>
+      <p className={`theme__name ${theme}`}>{theme}</p>
       <RiArrowDropRightLine
         className={`theme__arrow ${theme}`}
         onClick={() => {

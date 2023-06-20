@@ -10,9 +10,10 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-auto-flow: row;
-    gap: 1.5rem;
+    gap: 1.6rem;
     justify-items: center;
     align-items: center;
+    background: transparent;
   }
   &__delete {
     font-size: 3rem;
