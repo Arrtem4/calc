@@ -2,7 +2,8 @@
 import Screen from "./Screen";
 import ButtonBox from "./ButtonBox";
 import { useEffect, useState } from "react";
-function Calculator() {
+
+function Calculator({ theme }) {
   const [screenValue, setScreenValue] = useState("");
   const btnClick = (sign) => {
     switch (sign) {
@@ -123,8 +124,8 @@ function Calculator() {
   });
   return (
     <div className="calculator">
-      <Screen screenValue={screenValue} />
-      <ButtonBox btnClick={btnClick} />
+      <Screen screenValue={screenValue} theme={theme} />
+      <ButtonBox btnClick={btnClick} theme={theme} />
     </div>
   );
 }

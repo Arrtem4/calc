@@ -16,9 +16,10 @@ body {
   font-size: 1.6rem;
   height: 100vh;
   width: 100vw;
-  background: url(./backgrounds/back1.jpg) center / cover repeat;
-  backdrop-filter: blur(20px);
   user-select: none;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 .layout {
