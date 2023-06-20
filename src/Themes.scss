@@ -1,0 +1,43 @@
+.color {
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50rem;
+  transition: all 0.2s;
+  &.button {
+    &:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+    &:active {
+      transform: translateY(5px);
+      background: rgba(0, 0, 0, 1);
+    }
+  }
+  &.theme__arrow {
+    border-radius: 50rem;
+    background-color: transparent;
+    &:hover {
+      transform: scale(150%);
+    }
+    &:active {
+      transform: scale(100%);
+    }
+  }
+  &.theme__name {
+    background-color: transparent;
+  }
+}
+
+.color2 {
+  color: white;
+  background: rgba(170, 170, 170, 0.6);
+  border-radius: 50rem;
+  &.button {
+    &:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+    &:active {
+      transform: translateY(5px);
+      background: rgba(0, 0, 0, 1);
+    }
+  }
+}

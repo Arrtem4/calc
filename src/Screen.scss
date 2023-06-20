@@ -1,31 +1,13 @@
 .screen {
-  width: 100%;
-  font-size: 4rem;
-  color: white;
-  overflow: hidden;
-  display: inline-block;
-  text-align: right;
-  &__15 {
-    font-size: 2rem;
-    word-wrap: break-word;
-  }
-}
-.ankor {
-  color: transparent;
-}
-.screen {
   margin-bottom: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 50rem;
   padding: 0rem 2rem;
   min-height: 7rem;
   &__content {
     width: 100%;
     font-size: 4rem;
-    color: white;
     overflow: hidden;
     display: inline-block;
     text-align: right;
@@ -34,4 +16,8 @@
       word-wrap: break-word;
     }
   }
+}
+
+.ankor {
+  color: transparent;
 }

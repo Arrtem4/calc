@@ -3,7 +3,7 @@ import { RiDeleteBack2Fill } from "react-icons/ri";
 function Button({ btnValue, btnClick }) {
   return (
     <button
-      className={`button ${btnValue === "C" ? "button__clear" : ""}`}
+      className={`color button ${btnValue === "C" ? "button__clear" : ""}`}
       onClick={() => btnClick(btnValue)}
     >
       {btnValue === "R" ? (
