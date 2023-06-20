@@ -61,7 +61,6 @@ function Calculator() {
   };
   useEffect(() => {
     function handleKeyDown(event) {
-      console.log(event.key);
       if (event.key === "1") {
         btnClick(event.key);
       }

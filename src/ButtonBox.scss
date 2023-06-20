@@ -1,13 +1,3 @@
-.buttonBox {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-auto-flow: row;
-  gap: 1.5rem;
-  justify-items: center;
-  align-items: center;
-}
-
 .button {
   width: 7rem;
   height: 7rem;
@@ -25,11 +15,20 @@
     transform: translateY(5px);
     background: rgba(0, 0, 0, 1);
   }
-}
-.buttonDeleteIcon {
-  font-size: 3rem;
-}
-.buttonDeleteItem {
-  grid-column-start: span 2;
-  width: 100%;
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-auto-flow: row;
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+  }
+  &__delete {
+    font-size: 3rem;
+  }
+  &__clear {
+    grid-column-start: span 2;
+    width: 100%;
+  }
 }

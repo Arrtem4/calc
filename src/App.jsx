@@ -3,8 +3,11 @@ import Calculator from "./Calculator";
 
 function App() {
   return (
-    <div className="calculator__center">
-      <Calculator />
+    <div>
+      <div className="theme__block"></div>
+      <div className="calculator__center">
+        <Calculator />
+      </div>
     </div>
   );
 }

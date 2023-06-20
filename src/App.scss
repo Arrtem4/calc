@@ -20,14 +20,13 @@ body {
   user-select: none;
 }
 
-.calculator__center {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .calculator {
   padding: 2rem 1rem;
   width: 43rem;
+  &__center {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
