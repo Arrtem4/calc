@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import "./Themes.scss";
+@import "./variables.scss";
 
 * {
   margin: 0;
@@ -14,8 +15,6 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
-  height: 100vh;
-  width: 100vw;
   user-select: none;
   &::-webkit-scrollbar {
     width: 0;
@@ -26,13 +25,25 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: min-content 1fr;
+  &_mobile {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+  }
 }
 
 .calculator {
-  padding: 2rem 1rem;
-  width: 43rem;
+  width: 50%;
+  min-width: 35rem;
+  max-width: 43rem;
   justify-self: center;
   align-self: center;
+  &_mobile {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    padding: 0rem 2rem;
+  }
 }
 
 .theme {

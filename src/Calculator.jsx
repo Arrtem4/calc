@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Screen from "./Screen";
 import ButtonBox from "./ButtonBox";
 
-function Calculator({ theme }) {
+function Calculator({ theme, isMobile }) {
   const [screenValue, setScreenValue] = useState("");
   const btnClick = (sign) => {
     switch (sign) {
@@ -123,9 +123,9 @@ function Calculator({ theme }) {
     };
   });
   return (
-    <div className="calculator">
+    <div className={`${isMobile ? "calculator_mobile" : "calculator"}`}>
       <Screen screenValue={screenValue} theme={theme} />
-      <ButtonBox btnClick={btnClick} theme={theme} />
+      <ButtonBox btnClick={btnClick} theme={theme} isMobile={isMobile} />
     </div>
   );
 }

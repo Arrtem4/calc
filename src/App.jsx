@@ -13,10 +13,13 @@ function App() {
   useEffect(() => {
     localStorage.setItem("theme", JSON.stringify(themes.indexOf(theme)));
   }, [theme]);
+  const isMobile =
+    "ontouchstart" in document.documentElement &&
+    navigator.userAgent.match(/Mobi/);
   return (
     <div className={`${theme} layout background`}>
       <Theme theme={theme} setTheme={setTheme} themes={themes} />
-      <Calculator theme={theme} />
+      <Calculator theme={theme} isMobile={isMobile} />
     </div>
   );
 }

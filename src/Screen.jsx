@@ -2,7 +2,7 @@ import "./styles/Screen.scss";
 
 function Screen({ screenValue, theme }) {
   return (
-    <div className={`screen ${theme}`}>
+    <div className={`${theme} screen`}>
       <p
         className={`screen__content  ${
           screenValue.length > 14 ? `screen__content_15` : ``
