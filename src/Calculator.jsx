@@ -62,49 +62,23 @@ function Calculator({ theme, isMobile }) {
   };
   useEffect(() => {
     function handleKeyDown(event) {
-      if (event.key === "1") {
-        btnClick(event.key);
-      }
-      if (event.key === "2") {
-        btnClick(event.key);
-      }
-      if (event.key === "3") {
-        btnClick(event.key);
-      }
-      if (event.key === "4") {
-        btnClick(event.key);
-      }
-      if (event.key === "5") {
-        btnClick(event.key);
-      }
-      if (event.key === "6") {
-        btnClick(event.key);
-      }
-      if (event.key === "7") {
-        btnClick(event.key);
-      }
-      if (event.key === "8") {
-        btnClick(event.key);
-      }
-      if (event.key === "9") {
-        btnClick(event.key);
-      }
-      if (event.key === "0") {
-        btnClick(event.key);
-      }
-      if (event.key === "+") {
-        btnClick(event.key);
-      }
-      if (event.key === "-") {
-        btnClick(event.key);
-      }
-      if (event.key === "=") {
-        btnClick(event.key);
-      }
-      if (event.key === "*") {
-        btnClick(event.key);
-      }
-      if (event.key === "/") {
+      if (
+        event.key === "1" ||
+        event.key === "2" ||
+        event.key === "3" ||
+        event.key === "4" ||
+        event.key === "5" ||
+        event.key === "6" ||
+        event.key === "7" ||
+        event.key === "8" ||
+        event.key === "9" ||
+        event.key === "0" ||
+        event.key === "+" ||
+        event.key === "-" ||
+        event.key === "=" ||
+        event.key === "*" ||
+        event.key === "/"
+      ) {
         btnClick(event.key);
       }
       if (event.key === "Enter") {

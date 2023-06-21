@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import "./Themes.scss";
-@import "./variables.scss";
+
+@mixin hover {
+  @media only screen and (min-width: 900px) {
+    @content;
+  }
+}
 
 * {
   margin: 0;
@@ -25,11 +30,6 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: min-content 1fr;
-  &_mobile {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: min-content 1fr;
-  }
 }
 
 .calculator {
@@ -39,7 +39,7 @@ body {
   justify-self: center;
   align-self: center;
   &_mobile {
-    width: 100%;
+    width: 100vw;
     justify-self: center;
     align-self: center;
     padding: 0rem 2rem;
@@ -62,11 +62,30 @@ body {
   &__arrow {
     font-size: 4rem;
     background-color: transparent;
-    &:hover {
-      transform: scale(150%);
+    @include hover {
+      &:hover {
+        transform: scale(150%);
+      }
     }
     &:active {
       transform: scale(100%);
     }
+  }
+}
+
+.modal {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  &__box {
+    font-size: 5rem;
+    width: 100%;
+    text-align: center;
   }
 }
