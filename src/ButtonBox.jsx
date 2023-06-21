@@ -1,6 +1,6 @@
 import Button from "./Button";
-import buttons from "./Buttons.js";
-import "./ButtonBox.scss";
+import { buttons } from "./data/buttons";
+import "./styles/ButtonBox.scss";
 
 function ButtonBox({ btnClick, theme }) {
   return (

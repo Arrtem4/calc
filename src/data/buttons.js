@@ -1,4 +1,4 @@
-const buttons = [
+export const buttons = [
   "R",
   "C",
   "/",
@@ -20,4 +20,4 @@ const buttons = [
   "=",
 ];
 
-export default buttons;
+

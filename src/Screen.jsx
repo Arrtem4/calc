@@ -1,4 +1,4 @@
-import "./Screen.scss";
+import "./styles/Screen.scss";
 
 function Screen({ screenValue, theme }) {
   return (

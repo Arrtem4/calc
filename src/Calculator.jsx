@@ -1,7 +1,7 @@
 /* eslint-disable no-eval */
+import { useEffect, useState } from "react";
 import Screen from "./Screen";
 import ButtonBox from "./ButtonBox";
-import { useEffect, useState } from "react";
 
 function Calculator({ theme }) {
   const [screenValue, setScreenValue] = useState("");
