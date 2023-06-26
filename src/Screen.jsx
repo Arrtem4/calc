@@ -9,7 +9,7 @@ function Screen({ screenValue, theme }) {
         }`}
       >
         {screenValue}
-        <span className="ankor"></span>
+        <span className="anchor"></span>
       </p>
     </div>
   );
